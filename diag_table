@@ -23,6 +23,15 @@ MOM5_CORE_NYF_50lvl_comparison_test
 "ocean_model","kmt","kmt",           "ocean_grid","all",.false.,"none",2
 "ocean_model","kmu","kmu",           "ocean_grid","all",.false.,"none",2
 "ocean_model","drag_coeff","drag_coeff","ocean_grid","all",.false.,"none",2
+"ocean_model","dxt","dxt",     "ocean_grid","all",.false.,"none",2
+"ocean_model","dyt","dyt",     "ocean_grid","all",.false.,"none",2
+"ocean_model","dxu","dxu",     "ocean_grid","all",.false.,"none",2
+"ocean_model","dyu","dyu",     "ocean_grid","all",.false.,"none",2
+"ocean_model","coriolis","coriolis","ocean_grid","all",.false.,"none",2
+"ocean_model","f_coriolis","f_coriolis","ocean_grid","all",.false.,"none",2
+"ocean_model","beta","beta","ocean_grid","all",.false.,"none",2
+
+
 #==========================================================================
 #
 # 3 monthly
