@@ -317,7 +317,7 @@ MOM5_CORE_NYF_50lvl_comparison_test
 # td 12/7/11  "ice_model", "SSS",        "SSS",        "ice_daily", "all", .true., "none", 2
 # td 12/7/11  "ice_model", "EXT",        "EXT",        "ice_daily", "all", .true., "none", 2
 #
- "ice_model", "HI",         "HI",         "ice_month", "all", .true., "none", 2
+# "ice_model", "HI",         "HI",         "ice_month", "all", .true., "none", 2
  "ice_model", "SSH",         "SSH",         "ice_month", "all", .true., "none", 2
  "ice_model", "SST",         "SST",         "ice_month", "all", .true., "none", 2
  "ice_model", "SSH",        "SSH",        "ice_%4yr_%3dy", "all", .true., "none", 2
