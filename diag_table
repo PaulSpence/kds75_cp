@@ -2,12 +2,12 @@ MOM5_CORE_NYF_50lvl_comparison_test
 1 1 1 0 0 0
 #output files
 #"ice_daily",       24,  "hours",  1, "days", "time",
-"ice_%4yr_%3dy",    5,  "days", 1, "days", "time",5, "days"
+"ice_%4yr_%3dy",    3,  "hours", 1, "days", "time",5, "days"
 "ocean_%4yr_%3dy",  1,  "days", 1, "days", "time",1,"days"
 # "ocean_%4yr_%3dy",  1,  "hours", 1, "hours", "time",1,"days"
 #"ocean_daily",     24,  "hours",  1, "days", "time",
-"oceankerg_%4yr_%3dy",  5,  "days", 1, "days", "time",5,"days"
-"ocean",           -1,  "months", 1, "days", "time",
+"oceankerg_%4yr_%3dy",  1,  "days", 1, "days", "time",5,"days"
+"ocean",            3,  "months", 1, "days", "time",
 "ocean_month",      1,  "months", 1, "days", "time",
 "ice_month",        1,  "months", 1, "days", "time",
 "ocean_grid",      -1,  "months", 1, "days", "time",
@@ -23,15 +23,6 @@ MOM5_CORE_NYF_50lvl_comparison_test
 "ocean_model","kmt","kmt",           "ocean_grid","all",.false.,"none",2
 "ocean_model","kmu","kmu",           "ocean_grid","all",.false.,"none",2
 "ocean_model","drag_coeff","drag_coeff","ocean_grid","all",.false.,"none",2
-"ocean_model","dxt","dxt",     "ocean_grid","all",.false.,"none",2
-"ocean_model","dyt","dyt",     "ocean_grid","all",.false.,"none",2
-"ocean_model","dxu","dxu",     "ocean_grid","all",.false.,"none",2
-"ocean_model","dyu","dyu",     "ocean_grid","all",.false.,"none",2
-"ocean_model","coriolis","coriolis","ocean_grid","all",.false.,"none",2
-"ocean_model","f_coriolis","f_coriolis","ocean_grid","all",.false.,"none",2
-"ocean_model","beta","beta","ocean_grid","all",.false.,"none",2
-
-
 #==========================================================================
 #
 # 3 monthly
@@ -52,7 +43,6 @@ MOM5_CORE_NYF_50lvl_comparison_test
 "ocean_model","ty_trans","ty_trans",    "ocean","all",.true.,"none",2
 "ocean_model","tx_trans","tx_trans",    "ocean","all",.true.,"none",2
 "ocean_model","wt","wt",                "ocean","all",.true.,"none",2
-"ocean_model","passive_patch_1","passive_patch_1","ocean","all",.true.,"none",2
 #
 #
 # Monthly
@@ -113,11 +103,11 @@ MOM5_CORE_NYF_50lvl_comparison_test
 "ocean_model","temp","temp","oceankerg_%4yr_%3dy","all",.true.,"-280,80,-81,-30,-1,-1",2
 "ocean_model","salt","salt","oceankerg_%4yr_%3dy","all",.true.,"-280,80,-81,-30,-1,-1",2
 "ocean_model","pot_rho_0","pot_rho_0","oceankerg_%4yr_%3dy","all",.true.,"-280,80,-81,-30,-1,-1",2
-"ocean_model","mld","mld","oceankerg_%4yr_%3dy","all",.true.,"-280,80,-81,-30,-1,-1",2
-"ocean_model","tau_x","tau_x","oceankerg_%4yr_%3dy","all",.true.,"-280,80,-81,-30,-1,-1",2
-"ocean_model","tau_y","tau_y","oceankerg_%4yr_%3dy","all",.true.,"-280,80,-81,-30,-1,-1",2
+#"ocean_model","mld","mld","oceankerg_%4yr_%3dy","all",.true.,"-280,80,-81,-30,-1,-1",2
+#"ocean_model","tau_x","tau_x","oceankerg_%4yr_%3dy","all",.true.,"-280,80,-81,-30,-1,-1",2
+#"ocean_model","tau_y","tau_y","oceankerg_%4yr_%3dy","all",.true.,"-280,80,-81,-30,-1,-1",2
 "ocean_model","sea_level","sea_level","oceankerg_%4yr_%3dy","all",.true.,"-280,80,-81,-30,-1,-1",2
-"ocean_model","sea_level_sq","sea_level_sq","oceankerg_%4yr_%3dy","all",.true.,"-280,80,-81,-30,-1,-1",2
+#"ocean_model","sea_level_sq","sea_level_sq","oceankerg_%4yr_%3dy","all",.true.,"-280,80,-81,-30,-1,-1",2
 #
 # "ocean_model","geolon_t","geolon_t", "ocean_%4yr_%3dy","all",.false.,"none",2
 # "ocean_model","geolat_t","geolat_t", "ocean_%4yr_%3dy","all",.false.,"none",2
@@ -327,8 +317,10 @@ MOM5_CORE_NYF_50lvl_comparison_test
 # td 12/7/11  "ice_model", "SSS",        "SSS",        "ice_daily", "all", .true., "none", 2
 # td 12/7/11  "ice_model", "EXT",        "EXT",        "ice_daily", "all", .true., "none", 2
 #
-# "ice_model", "HI",         "HI",         "ice_%4yr_%3dy", "all", .true., "none", 2
-# "ice_model", "SH",         "SH",         "ice_month", "all", .true., "none", 2
+ "ice_model", "HI",         "HI",         "ice_month", "all", .true., "none", 2
+ "ice_model", "SSH",         "SSH",         "ice_month", "all", .true., "none", 2
+ "ice_model", "SST",         "SST",         "ice_month", "all", .true., "none", 2
+ "ice_model", "SSH",        "SSH",        "ice_%4yr_%3dy", "all", .true., "none", 2
 # "ice_model", "LH",         "LH",         "ice_daily", "all", .true., "none", 2
 # "ice_model", "CELL_AREA",  "CELL_AREA",  "ice_%4yr_%3dy", "all", .false., "none", 2
 # "ice_model", "COSROT",     "COSROT",     "ice_%4yr_%3dy", "all", .false., "none", 2
