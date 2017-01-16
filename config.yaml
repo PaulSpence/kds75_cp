@@ -8,7 +8,7 @@ mem: 10464GB
 
 jobname: kds75_cp
 
-qsub_flags: -W umask=027
+#qsub_flags: -W umask=027
 
 priority: 1023
 #collate_mem: 98Gb
