@@ -9,7 +9,7 @@ mem: 10464GB
 
 jobname: kds75_cp
 
-#qsub_flags: -W umask=027
+qsub_flags: -W umask=027
 
 priority: 1023
 #collate_mem: 98Gb
@@ -37,8 +37,9 @@ model: mom
 #exe: /short/v45/aph502/mom/bin/mom51_sis_xgrid
 #exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel16
 #exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O3
-#exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O2
-exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O2.2017
+#exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe1.O2
+#exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O3.2017
+exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O2.ompi1.10.2
 # exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.debug
 # exe: mom51_sis_ompi184_debug_5kmethods
 input:
