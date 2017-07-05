@@ -70,9 +70,9 @@ MOM5_CORE_NYF_50lvl_comparison_test
 "ocean_model","tau_y" ,                    "tau_y",                     "ocean_month","all",.true.,"none",2
 
 #Ertel PV diags
-"ocean_model","u","u","ocean","all",.true.,"none",2
-"ocean_model","v","v","ocean","all",.true.,"none",2
-"ocean_model","wt","wt","ocean","all",.true.,"none",2
+#"ocean_model","u","u","ocean","all",.true.,"none",2
+#"ocean_model","v","v","ocean","all",.true.,"none",2
+#"ocean_model","wt","wt","ocean","all",.true.,"none",2
 "ocean_model","speed","speed","ocean","all",.true.,"none",2
 "ocean_model","n2_pv","n2_pv","ocean","all",.true.,"none",2
 "ocean_model","pg_pv","pg_pv","ocean","all",.true.,"none",2
