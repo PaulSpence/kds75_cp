@@ -1,10 +1,10 @@
 # PBS flags
 queue: normal
 qsub_flags: -lother=hyperthread
-project: e14
-#ncpus: 7200
+project: v45
+ncpus: 7200
 walltime: 5:00:00
-ncpus: 5232
+#ncpus: 7200
 mem: 10464GB
 
 jobname: kds75_cp
