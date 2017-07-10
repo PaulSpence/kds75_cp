@@ -1,7 +1,7 @@
 # PBS flags
 queue: normal
 qsub_flags: -lother=hyperthread
-project: v45
+project: e14
 ncpus: 7200
 walltime: 5:00:00
 #ncpus: 7200
@@ -39,7 +39,8 @@ model: mom
 #exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O3
 #exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe1.O2
 #exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O3.2017
-exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O2.ompi1.10.2
+#exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O2.ompi1.10.2
+exe: fms_MOM_SIS_pub2017.x
 # exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.debug
 # exe: mom51_sis_ompi184_debug_5kmethods
 input:
