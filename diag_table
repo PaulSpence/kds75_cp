@@ -83,6 +83,7 @@ MOM5_CORE_NYF_50lvl_comparison_test
 "ocean_model","pvf","pvf","ocean","all",.true.,"none",2
 "ocean_model","ri_balance","ri_balance","ocean","all",.true.,"none",2
 "ocean_model","topostrophy","topostrophy","ocean","all",.true.,"none",2
+"ocean_model","vorticity_z","vorticity_z","ocean","all",.true.,"none",2
 
 
 #
