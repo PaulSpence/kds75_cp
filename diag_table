@@ -96,6 +96,12 @@ MOM5_CORE_NYF_50lvl_comparison_test
 "ocean_model","topostrophy","topostrophy","ocean","all",.true.,"none",2
 "ocean_model","vorticity_z","vorticity_z","ocean","all",.true.,"none",2
 
+"ocean_snap",                  1,  "months", 1, "days", "time",
+# snapshot fields
+"ocean_model","pvf","pvf",                            "ocean_snap","all",.false.,"none",2
+"ocean_model","vorticity_z","vorticity_z",     "ocean_snap","all",.false.,"none",2
+#
+
 
 #
 # Ice
