@@ -2,10 +2,10 @@
 queue: normal
 qsub_flags: -lother=hyperthread
 project: e14
-ncpus: 7200
 walltime: 5:00:00
-#ncpus: 7200
+ncpus: 5232
 mem: 10464GB
+#ncpus: 7200
 
 jobname: kds75_cp
 
@@ -47,7 +47,7 @@ input:
     #- /short/v45/pas561/mom/input/mom01Ptrace/ 
     - /short/v45/amh157/mom/input/mom01/levels_kds75 
     - /short/v45/amh157/mom/input/mom01/climatology
-    #- /short/v45/amh157/mom/input/mom01/mask_7200
+    - /short/v45/amh157/mom/input/mom01/mask_7200
     - /short/v45/amh157/mom/input/mom01/ocean_properties
     - /short/v45/amh157/mom/input/mom01/mosaic_mxw
     - /short/v45/amh157/mom/input/cnyf2
